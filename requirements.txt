@@ -6,3 +6,4 @@ onnxruntime
 opencv-python
 gdown
 flask
+uvicorn

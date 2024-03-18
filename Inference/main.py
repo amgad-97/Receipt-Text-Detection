@@ -30,4 +30,5 @@ def detect_text():
         return jsonify({"error": str(e)})
 
 if __name__ == '__main__':
-    app.run(host="172.20.10.3",port="3000",debug=True)
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=3000)
