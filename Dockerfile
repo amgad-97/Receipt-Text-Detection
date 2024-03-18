@@ -1,0 +1,18 @@
+
+FROM python:3.10
+
+WORKDIR /app
+
+COPY ./Inference .
+COPY ./requirements.txt .
+
+
+RUN pip install --no-cache-dir -r ./requirements.txt
+RUN gdown https://drive.google.com/uc?id=1-28anYCBa8Cs0mqYE3EqqwPJ7SNZSFtJ
+
+
+# OK, now we pip install our requirements
+
+EXPOSE 3000
+
+CMD python main.py
