@@ -6,7 +6,8 @@
 ### after that we run the container and we expose our port 8080
     `docker run -p 8080:3000 detect_text:1`
 ### then use this block of code to simulate the API request :
-'''
+
+```
 import requests
 import base64
 
@@ -30,7 +31,7 @@ if response.status_code == 200:
 else:
     print(f"Error: {response.status_code}, {response.text}")
 
-'''
+```
 
 ## API Instructions :
 * Input format  : {"image_base64": base64 code }
