@@ -16,4 +16,4 @@ RUN gdown https://drive.google.com/uc?id=1-28anYCBa8Cs0mqYE3EqqwPJ7SNZSFtJ
 
 EXPOSE 3000
 
-CMD uvicorn main:app --host 0.0.0.0 --port 3000
+CMD python main.py
